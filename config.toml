@@ -1,8 +1,8 @@
-baseurl = "https://pages.gitlab.io/hugo/"
+baseurl = "https://mattdanhall.gitlab.io"
 contentdir    = "content"
 layoutdir     = "layouts"
 publishdir    = "public"
-title = "Beautiful Hugo"
+title = "Matthew D. Hall"
 canonifyurls  = true
 
 DefaultContentLanguage = "en"
