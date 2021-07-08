@@ -7,7 +7,17 @@ theme = "hugo-theme-console"
   # Cutting off the page title to two chars for mobile (console-demo -> co)
   # titleCutting = true
 
-  # animateStyle = "animated zoomIn fast" 
+  # animateStyle = "animated zoomIn fast"
+
+  custom_css = ["css/custom.css"]
+
+  [[params.navlinks]]
+  name = "CV/"
+  url = "Academic_CV.pdf"
+
+  [[params.navlinks]]
+  name = "about/"
+  url = "about/"
 
   [[params.navlinks]]
   name = "publications/"

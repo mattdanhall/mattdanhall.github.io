@@ -1,13 +1,13 @@
 {{ define "main" }}
 
 <h1>About</h1>
-
-<p>
-Matthew D. Hall is a post-graduate research student in the Natural Robotics Lab.
-</p>
+{{ printf `<img src="display_pic.jpg" class="display-pic">` | safeHTML }}
+{{ with .Site.GetPage "/about" }}
+    {{ .Content}}
+{{end}}
 <br/>
 
-<h1>Latest publications</h1>
+<h1>Latest Publications</h1>
 
 <div class="posts-list">
 {{ with .Site.GetPage "/publications" }}
