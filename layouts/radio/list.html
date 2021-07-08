@@ -1,0 +1,17 @@
+{{ define "main" }}
+<h1>{{ .Page.Title }}</h1>
+
+I am also responsible for a regular guest slot on a radio show hosted by my friend Prof. Murray, and broadcast on Gaga Radio. Check out the episodes below
+<br/>
+
+{{ range first 1 (sort .Data.Pages "Date" "desc")}}
+    <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }} - {{ .PublishDate.Format "Jan. 2006" }}</a></h1>
+    <iframe width="100%" height="120" src="{{ .Params.show }}" frameborder="0" ></iframe>
+{{ end }}
+
+{{ range after 1 (sort .Data.Pages "Date" "desc")}}
+    <p>
+        <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }} - {{ .PublishDate.Format "Jan. 2006" }}</a></h1>
+    </p>
+{{ end }}
+{{ end }}

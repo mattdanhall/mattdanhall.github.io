@@ -1,0 +1,11 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+
+{{ .PublishDate.Format "Jan. 2006" }}
+<br/><br/>
+{{ with .Params.show }}
+<iframe width="100%" height="120" src="{{ . }}" frameborder="0" ></iframe>
+{{ end }}
+<br/><br/>
+{{ .Content }}
+{{ end }}

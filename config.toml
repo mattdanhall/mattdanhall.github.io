@@ -22,3 +22,7 @@ theme = "hugo-theme-console"
   [[params.navlinks]]
   name = "publications/"
   url = "publications/"
+
+  [[params.navlinks]]
+  name = "radio/"
+  url = "radio/"
