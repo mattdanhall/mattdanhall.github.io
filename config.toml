@@ -11,9 +11,9 @@ theme = "hugo-theme-console"
 
   custom_css = ["css/custom.css"]
 
-  [[params.navlinks]]
-  name = "CV/"
-  url = "Academic_CV.pdf"
+  #[[params.navlinks]]
+  #name = "CV/"
+  #url = "Academic_CV.pdf"
 
   [[params.navlinks]]
   name = "about/"
