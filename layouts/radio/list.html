@@ -1,7 +1,7 @@
 {{ define "main" }}
 <h1>{{ .Page.Title }}</h1>
 
-I am also responsible for a regular guest slot on a radio show hosted by my friend Prof. Murray, and broadcast on Gaga Radio. Check out the episodes below.
+{{ .Content }}
 <br/>
 
 <div class="posts-list">
@@ -11,6 +11,7 @@ I am also responsible for a regular guest slot on a radio show hosted by my frie
             <div class="date">{{ .PublishDate.Format "Jan. 2006" }}</div>
             <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}.</a></h1>
             <iframe width="100%" height="120" src="{{ .Params.show }}" frameborder="0" ></iframe>
+            {{ .Content }}
         </p>
     </div>
 {{ end }}
@@ -22,7 +23,6 @@ I am also responsible for a regular guest slot on a radio show hosted by my frie
         <p>
             <div class="date">{{ .PublishDate.Format "Jan. 2006" }}</div>
             <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }} here.</a></h1>
-            <!-- <a href="{{ .Permalink }}" title="{{ .Title }}">Listen here.</a> -->
         </p>
     </div>
 {{ end }}

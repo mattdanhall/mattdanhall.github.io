@@ -15,9 +15,9 @@ theme = "hugo-theme-console"
   #name = "CV/"
   #url = "Academic_CV.pdf"
 
-  [[params.navlinks]]
-  name = "about/"
-  url = "about/"
+  #[[params.navlinks]]
+  #name = "about/"
+  #url = "about/"
 
   [[params.navlinks]]
   name = "publications/"
