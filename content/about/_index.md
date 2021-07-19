@@ -8,4 +8,6 @@ I am a member of the [Natural Robotics Lab](https://www.sheffield.ac.uk/naturalr
 
 My research is into methods of reconfiguration for modular robotic systems. More specifically, I aim to design and deploy a novel method of self-reconfiguration, whereby modules actively remove themselves from a starting structure. This work is funded by the EPSRC.
 
+I also host a regular slot on a radio show produced by my friend Prof. Murray and broadcast on Gaga Radio. The show is called "Clear A Space", and is a Jazz/Funk/Soul journey accompanying a lighthearted take on life and emotions. My section is "Wait For The Moment" and comprises a selection of some of my favourite Jazz/Funk/Soul tunes revolving around a central emotion/vibe.
+
 Check out my [GitLab](https://gitlab.com/mattdanhall) or [Google Scholar](https://scholar.google.com/citations?user=9OkcSXcAAAAJ), or if you want to talk you can reach me via [email](mailto:m.d.hall@sheffield.ac.uk).
