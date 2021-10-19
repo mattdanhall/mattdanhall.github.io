@@ -8,4 +8,4 @@ type = "gallery"
 ## Shape Formation via Active Subtraction with Modular Robots.
 <!--more-->
 _M. D. Hall_.
-Awarded the best Poster Presentation.
+Awarded the Best Poster Presentation.
