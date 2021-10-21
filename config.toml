@@ -1,4 +1,4 @@
-baseURL = "http://mattdanhall.com/"
+baseURL = "/"
 languageCode = "en-us"
 title = "Matthew D. Hall"
 theme = "hugo-theme-console"
