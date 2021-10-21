@@ -1,4 +1,4 @@
-baseURL = "http://mattdanhall.gitlab.io/"
+baseURL = "http://mattdanhall.com/"
 languageCode = "en-us"
 title = "Matthew D. Hall"
 theme = "hugo-theme-console"
