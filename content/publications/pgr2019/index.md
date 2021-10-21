@@ -1,6 +1,6 @@
 +++
 image = "poster.png"
-title = "ACSE Postgraduate Researcher Symposium"
+title = "ACSE Researcher Symposium"
 date = "2019-02-21"
 type = "gallery"
 +++
