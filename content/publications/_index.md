@@ -1,3 +1,3 @@
 +++
-title = "PUBLICATIONS/PRESENTATIONS"
+title = "Publications"
 +++

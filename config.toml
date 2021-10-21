@@ -4,16 +4,12 @@ layoutdir     = "layouts"
 publishdir    = "public"
 languageCode = "en-gb"
 title = "Matthew D. Hall"
-theme = "hugo-theme-console"
-canonifyURLs = "true"
 
 [params]
   # Cutting off the page title to two chars for mobile (console-demo -> co)
   # titleCutting = true
 
-  # animateStyle = "animated zoomIn fast"
-
-  custom_css = ["css/custom.css"]
+  custom_css = ["css/console.css"]
 
   [[params.navlinks]]
   name = "CV/"

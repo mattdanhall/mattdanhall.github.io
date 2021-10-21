@@ -10,4 +10,6 @@ My research is concerned with methods of reconfiguration for modular robotic sys
 
 I also host a regular slot on a [radio show](./radio) produced by my friend Prof. Murray and broadcast on Gaga Radio. The show is called "Clear A Space", and is a Jazz/Funk/Soul journey accompanying a lighthearted take on life and emotions. My section is "Wait For The Moment" and comprises a selection of some of my favourite Jazz/Funk/Soul tunes revolving around a central emotion/vibe.
 
+<!-- I've been known to snap a few [photos](./photos) too - mostly of the sky. -->
+
 Check out my [GitLab](https://gitlab.com/mattdanhall), [LinkedIn](https://www.linkedin.com/in/matthew-d-hall) or [Google Scholar](https://scholar.google.com/citations?user=9OkcSXcAAAAJ). Alternatively, if you want to talk you can reach me via [email](mailto:m.d.hall@sheffield.ac.uk).
