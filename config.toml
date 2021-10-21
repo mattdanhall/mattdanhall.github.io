@@ -1,7 +1,7 @@
 baseURL = "http://mattdanhall.com/"
 languageCode = "en-us"
 title = "Matthew D. Hall"
-#theme = "hugo-theme-console"
+theme = "hugo-theme-console"
 
 [params]
   # Cutting off the page title to two chars for mobile (console-demo -> co)
@@ -9,15 +9,11 @@ title = "Matthew D. Hall"
 
   # animateStyle = "animated zoomIn fast"
 
-  custom_css = ["css/console.css"]
+  custom_css = ["css/custom.css"]
 
   [[params.navlinks]]
   name = "CV/"
   url = "CV.pdf"
-
-  #[[params.navlinks]]
-  #name = "about/"
-  #url = "about/"
 
   [[params.navlinks]]
   name = "gitlab/"
