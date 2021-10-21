@@ -30,7 +30,3 @@ theme = "hugo-theme-console"
   [[params.navlinks]]
   name = "radio/"
   url = "radio/"
-
-  #[[params.navlinks]]
-  #name = "photos/"
-  #url = "photos/"
