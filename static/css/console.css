@@ -1,30 +1,30 @@
 @font-face {
-    font-family: 'Roboto Mono';
-    src: url('../font/RobotoMono-Regular.ttf') format('truetype');
+    font-family: 'Source Code Pro';
+    src: url('../font/SourceCodePro-Regular.ttf') format('truetype');
     font-style: normal;
     font-weight: 400;
     text-rendering: optimizeLegibility;
 }
 
 @font-face {
-    font-family: 'Roboto Mono';
-    src: url('../font/RobotoMono-Italic.ttf') format('truetype');
+    font-family: 'Source Code Pro';
+    src: url('../font/SourceCodePro-Italic.ttf') format('truetype');
     font-style: italic;
     font-weight: 400;
     text-rendering: optimizeLegibility;
 }
 
 @font-face {
-    font-family: 'Roboto Mono';
-    src: url('../font/RobotoMono-Bold.ttf') format('truetype');
+    font-family: 'Source Code Pro';
+    src: url('../font/SourceCodePro-Bold.ttf') format('truetype');
     font-style: normal;
     font-weight: 700;
     text-rendering: optimizeLegibility;
 }
 
 @font-face {
-    font-family: 'Roboto Mono';
-    src: url('../font/RobotoMono-BoldItalic.ttf') format('truetype');
+    font-family: 'Source Code Pro';
+    src: url('../font/SourceCodePro-BoldItalic.ttf') format('truetype');
     font-style: italic;
     font-weight: 700;
     text-rendering: optimizeLegibility;
@@ -33,8 +33,9 @@
 :root {
     --global-font-size: 16px;
     --global-font-color: #444;
-    --mono-font-stack: Roboto Mono, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-    --font-stack: Roboto Mono, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    --mono-font-stack: Source Code Pro, Roboto Mono, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    --font-stack: Source Code Pro, Roboto Mono, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    --primary-color: #6aa84f;
     --global-line-height: 1.6em;
     --page-width: 70em;
     --display-h1-decoration: 1;
@@ -50,6 +51,35 @@
     }
 }
 
+.display-pic{
+    display:inline-block;
+    text-align:center;
+    text-rendering:optimizeSpeed;
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:4px;
+    font-family:Source Code Pro;
+    background-color:#fff;
+    color:#000;
+    line-height:5px;
+    overflow:hidden;
+    border-radius:0;
+    float:left;
+    margin-right:20px;
+    margin-bottom:20px;
+    width:20%;
+}
+
+@media only screen and (max-width:650px){
+    .display-pic{
+        font-size:3.2px;
+        line-height:4px;
+        margin-right:6px;
+        margin-bottom:6px;
+        width:50%
+    }
+}
 
 .sidebar-heading {
     text-transform: none;
