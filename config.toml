@@ -1,7 +1,11 @@
-baseURL = "http://mattdanhall.com/"
-languageCode = "en-us"
+baseURL = "https://mattdanhall.com/"
+contentdir    = "content"
+layoutdir     = "layouts"
+publishdir    = "public"
+languageCode = "en-gb"
 title = "Matthew D. Hall"
 theme = "hugo-theme-console"
+canonifyURLs = "true"
 
 [params]
   # Cutting off the page title to two chars for mobile (console-demo -> co)
