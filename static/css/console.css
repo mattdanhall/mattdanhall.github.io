@@ -1,12 +1,10 @@
 :root{
-    --global-font-size:15px;
-    --global-line-height:1.4em;
+    --global-font-size:16px;
+    --global-line-height: 1.6em;
     --global-space:10px;
     --mono-font-stack: Source Code Pro, Roboto Mono, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
     --font-stack: Source Code Pro, Roboto Mono, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-    --background-color:#fff;
-    --page-width:60em;
-    --font-color:#151515;
+    --page-width:70em;
     --invert-font-color:#fff;
     --primary-color: #6aa84f;
     --secondary-color:#727578;
@@ -15,8 +13,62 @@
     --progress-bar-fill:#151515;
     --code-bg-color:#e8eff2;
     --input-style:solid;
-    --display-h1-decoration:none
+    --display-h1-decoration:1;
+    --code-bg-color: #fff;
+    --background-color:#fff;
+    --global-font-color: #444;
+    --font-color:#151515;
 }
+
+/*@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color:#1e1e1e;
+        --global-font-color: #ccc;
+        --font-color:#fff
+    }
+}
+*/
+@media only screen and (max-width: 850px) {
+    :root {
+        --global-font-size: 14px;
+        --global-font-color: #444;
+        --global-line-height: 1.6em;
+        --page-width: 70em;
+    }
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('../font/SourceCodePro-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('../font/SourceCodePro-Italic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('../font/SourceCodePro-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('../font/SourceCodePro-BoldItalic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+}
+
 *{
     box-sizing:border-box;
     text-rendering:geometricPrecision
@@ -36,7 +88,8 @@ body{
     margin:0;
     font-family:var(--font-stack);
     word-wrap:break-word;
-    background-color:var(--background-color)
+    background-color:var(--background-color);
+    margin-bottom: 75px;
 }
 .logo,h1,h2,h3,h4,h5,h6{
     line-height:var(--global-line-height)
@@ -748,60 +801,6 @@ figure>figcaption{
     font-weight:700
 }
 
-
-@font-face {
-    font-family: 'Source Code Pro';
-    src: url('../font/SourceCodePro-Regular.ttf') format('truetype');
-    font-style: normal;
-    font-weight: 400;
-    text-rendering: optimizeLegibility;
-}
-
-@font-face {
-    font-family: 'Source Code Pro';
-    src: url('../font/SourceCodePro-Italic.ttf') format('truetype');
-    font-style: italic;
-    font-weight: 400;
-    text-rendering: optimizeLegibility;
-}
-
-@font-face {
-    font-family: 'Source Code Pro';
-    src: url('../font/SourceCodePro-Bold.ttf') format('truetype');
-    font-style: normal;
-    font-weight: 700;
-    text-rendering: optimizeLegibility;
-}
-
-@font-face {
-    font-family: 'Source Code Pro';
-    src: url('../font/SourceCodePro-BoldItalic.ttf') format('truetype');
-    font-style: italic;
-    font-weight: 700;
-    text-rendering: optimizeLegibility;
-}
-
-:root {
-    --global-font-size: 16px;
-    --global-font-color: #444;
-    --mono-font-stack: Source Code Pro, Roboto Mono, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-    --font-stack: Source Code Pro, Roboto Mono, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-    --primary-color: #6aa84f;
-    --global-line-height: 1.6em;
-    --page-width: 70em;
-    --display-h1-decoration: 1;
-    --code-bg-color: #fff;
-}
-
-@media only screen and (max-width: 850px) {
-    :root {
-        --global-font-size: 14px;
-        --global-font-color: #444;
-        --global-line-height: 1.6em;
-        --page-width: 70em;
-    }
-}
-
 .display-pic{
     display:inline-block;
     text-align:center;
@@ -826,7 +825,7 @@ figure>figcaption{
     .display-pic{
         font-size:3.2px;
         line-height:4px;
-        margin-right:6px;
+        margin-right:20px;
         margin-bottom:6px;
         width:50%
     }
@@ -849,13 +848,6 @@ figure>figcaption{
 
 .label {
     font-family: var(--font-stack);
-}
-
-body {
-    font-family: var(--font-stack);
-    font-size: var(--global-font-size);
-    background-color: #fff;
-    margin-bottom: 75px;
 }
 
 h1,
@@ -1057,4 +1049,23 @@ figure {
         margin-top: 50px;
         padding-top: 5px;;
     }
+}
+
+.btn {
+    border: none;
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+    display: block;
+    padding: 0px 0px;
+    box-sizing: border-box;
+    line-height: var(--global-line-height);
+}
+.btn:hover {
+    color: var(--global-text-color);
+}
+
+.dark-mode {
+    --background-color:#1e1e1e;
+    --global-font-color: #ccc;
+    --font-color:#fff
 }
