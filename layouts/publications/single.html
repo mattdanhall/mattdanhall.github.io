@@ -1,0 +1,20 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+
+{{ .PublishDate.Format "Jan. 2, 2006" }}
+{{ with .Params.paper }}
+    // <a href="{{ . }}">View Paper</a>
+{{ end }}
+{{ with .Params.conf }}
+    // <a href="{{ . }}">Conference Proceedings</a>
+{{ end }}
+{{ with .Params.youtube }}
+    // <a href="{{ . }}">Video Presentation</a>
+{{ end }}
+<br/><br/>
+{{ .Content }}
+<br/>
+{{ with .Params.youtube }}
+    <iframe width="560" height="315" src="{{ . }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{{ end }}
+{{ end }}

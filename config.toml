@@ -3,7 +3,7 @@ contentdir    = "content"
 layoutdir     = "layouts"
 publishdir    = "public"
 languageCode = "en-gb"
-title = "Matthew D. Hall"
+title = "mattdanhall.com"
 
 [params]
   # Cutting off the page title to two chars for mobile (console-demo -> co)
