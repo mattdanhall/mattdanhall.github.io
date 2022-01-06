@@ -1,0 +1,19 @@
+{{ define "main" }}
+<h1>{{ .Page.Title }}</h1>
+
+{{ .Content }}
+<br/>
+
+<div class="posts-list">
+{{ range (sort .Data.Pages "Date" "desc") }}
+    <div class="post">
+        <p>
+            <div class="date">{{ .PublishDate.Format "Jan. 2006" }}</div>
+            <h1><a href="{{ .Params.Link }}" title="{{ .Title }}">{{ .Title }}</a></h1>
+            {{ .Content }}
+        </p>
+    </div>
+{{ end }}
+</div>
+
+{{ end }}

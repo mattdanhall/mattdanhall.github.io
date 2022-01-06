@@ -1,7 +1,7 @@
 +++
 title = "Episode 6"
 date = "2021-07-01"
-show = "https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&hide_artwork=1&feed=%2Fgagaradio%2Fclear-a-space-with-prof-murray-006%2F"
+show = "006"
 +++
 
-"Wait For The Moment" starts at 1:04:48 and this episode I'm in a sentimental mood. Featuring tracks from Donny Hathaway, Durand Jones & The Indications and Dinner Party.
+Inspired by Prof. Murray on last month's "Clear a Space", I'm in a sentimental mood on this months "Wait For The Moment". It starts at 1:04:48 and features tracks from Donny Hathaway, Durand Jones & The Indications and Dinner Party.

@@ -27,22 +27,37 @@
 {{ end }}
 </div>
 
+<h1>LATEST PROJECTS</h1>
+
+<div class="posts-list">
+{{ with .Site.GetPage "/projects" }}
+    {{ range first 3 (sort .Data.Pages "Date" "desc" (where .Pages ".Params.private" "!=" true)) }}
+        <div class="post">
+            <p>
+                <div class="date">{{ .PublishDate.Format "Jan. 2006" }}</div>
+                <h1><a href="{{ .Params.link }}" title="{{ .Title }}">{{ .Title }}</a></h1>
+                {{ .Summary }}
+            </p>
+        </div>    
+    {{ end }}
+{{ end }}
+</div>
+
 <h1>LATEST RADIO SHOWS</h1>
 
 <div class="posts-list">
 {{ with .Site.GetPage "/radio" }}
-    {{ range first 1 (sort .Data.Pages "Date" "desc") }}
+    <!-- {{ range first 1 (sort .Data.Pages "Date" "desc") }}
         <div class="post">
             <p>
                 <div class="date">{{ .PublishDate.Format "Jan. 2006" }}</div>
                 <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
-                <!-- {{ .Content }} -->
                 <iframe width="60%" height="120" src="{{ .Params.show }}" frameborder="0" ></iframe>
                 {{ .Content }}
             </p>
         </div>
-    {{ end }}
-    {{ range first 1 (after 1 (sort .Data.Pages "Date" "desc")) }}
+    {{ end }} -->
+    {{ range first 2 (sort .Data.Pages "Date" "desc") }}
         <div class="post">
             <p>
                 <div class="date">{{ .PublishDate.Format "Jan. 2006" }}</div>
@@ -53,14 +68,10 @@
     {{ end }}
         <div class="post">
             <p>
-                <div class="date">2021 - ?</div>
+                <div class="date">2021 - Now</div>
                 <h1>Listen to <a href="/radio" title="/radio">older episodes here</a></h1>
                 All episodes are available to listen to <a href="/radio" title="radio">here</a> or directly on the <a href="https://www.mixcloud.com/gagaradio/" title="mixcloud">gagaradio Mixcloud</a>.
-            </p>
-            <p>
-                <div class="date">All time</div>
-                <h1>Or just listen to the <a href=https://open.spotify.com/playlist/6UTOU1UwdxU5KbWPpA8ubX title="playlist">Spotify playlist</a></h1>
-                <iframe src="https://open.spotify.com/embed/playlist/6UTOU1UwdxU5KbWPpA8ubX?utm_source=generator&theme=0" width="60%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                Alternatively, you can listen to just the music on the <a href=https://open.spotify.com/playlist/6UTOU1UwdxU5KbWPpA8ubX title="playlist">Spotify playlist</a>.
             </p>
         </div>
 {{ end }}

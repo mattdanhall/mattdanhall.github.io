@@ -24,5 +24,9 @@ title = "mattdanhall.com"
   url = "publications/"
 
   [[params.navlinks]]
+  name = "projects/"
+  url = "projects/"
+
+  [[params.navlinks]]
   name = "radio/"
   url = "radio/"
