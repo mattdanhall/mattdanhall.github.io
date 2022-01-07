@@ -1,5 +1,5 @@
 +++
-title = "Self-Reconfiguration in Two-Dimensions via Active Subtraction with Modular Robots."
+title = "Self-Reconfiguration in Two-Dimensions via Active Subtraction with Modular Robots"
 pub = "Robotics: Science and Systems XVI (RSS)"
 date = "2020-07-12"
 paper = "http://www.roboticsproceedings.org/rss16/p014.pdf"

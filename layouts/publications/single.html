@@ -1,7 +1,7 @@
 {{ define "main" }}
 <h1>{{ .Title }}</h1>
 
-<b>Presented at {{ .Params.pub }}</b><br/><br/>
+<b>Presented at {{ .Params.pub }}.</b><br/><br/>
 
 {{ .PublishDate.Format "Jan. 2, 2006" }}
 {{ with .Params.paper }}
@@ -19,13 +19,13 @@
 {{ with .Params.youtube }}
     <iframe width="560" height="315" src="{{ . }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 {{ end }}
-<!-- {{ with .Params.image }}
-<style>
-    img {width: 50%}
-    @media only screen and (max-width: 600px) {
-        img {width: 100%}
-    }
-</style>
+{{ with .Params.image }}
+    <style>
+        img {width: 50%}
+        @media only screen and (max-width: 600px) {
+            img {width: 100%}
+        }
+    </style>
     <img src="{{ . }}" width="10%">
-{{ end }} -->
+{{ end }}
 {{ end }}

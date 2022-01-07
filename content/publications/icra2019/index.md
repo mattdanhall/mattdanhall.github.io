@@ -1,5 +1,5 @@
 +++
-title = "Spatial Coverage Without Computation."
+title = "Spatial Coverage Without Computation"
 pub = "IEEE International Conference on Robotics and Automation (ICRA)"
 date = "2019-01-26"
 paper = "https://eprints.whiterose.ac.uk/143335/1/ICRA2019-Anil-camera-ready.pdf"
