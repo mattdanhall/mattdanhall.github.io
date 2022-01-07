@@ -20,7 +20,7 @@
     --global-font-color: #444;
     --font-color:#151515;
 }
-
+/*
 @media (prefers-color-scheme: dark) {
     :root {
         --background-color:#1e1e1e;
@@ -28,7 +28,7 @@
         --font-color:#fff
     }
 }
-
+*/
 @media only screen and (max-width: 850px) {
     :root {
         --global-font-size: 14px;

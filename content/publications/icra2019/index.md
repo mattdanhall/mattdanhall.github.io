@@ -4,6 +4,7 @@ pub = "IEEE International Conference on Robotics and Automation (ICRA)"
 date = "2019-01-26"
 paper = "https://eprints.whiterose.ac.uk/143335/1/ICRA2019-Anil-camera-ready.pdf"
 conf = "https://ieeexplore.ieee.org/document/8793731"
+image = "icra2019.jpg"
 +++
 
 <!--more-->
