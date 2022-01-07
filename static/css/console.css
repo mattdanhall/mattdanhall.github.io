@@ -24,7 +24,7 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --background-color:#1e1e1e;
-        --global-font-color: #ccc;
+        --global-font-color: #fff;
         --font-color:#fff
     }
 }
@@ -1066,6 +1066,6 @@ figure {
 
 .dark-mode {
     --background-color:#1e1e1e;
-    --global-font-color: #ccc;
+    --global-font-color: #fff;
     --font-color:#fff
 }

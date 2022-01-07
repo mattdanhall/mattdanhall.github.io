@@ -1,11 +1,13 @@
 +++
 image = "poster.png"
-title = "ACSE Researcher Symposium"
+title = "Shape Formation via Active Subtraction with Modular Robots."
+pub = "ACSE Researcher Symposium"
 date = "2019-02-21"
 type = "gallery"
 +++
 
-## Shape Formation via Active Subtraction with Modular Robots.
+## Presented at the ACSE Researcher Symposium 2019.
+
 <!--more-->
 _M. D. Hall_.
 Awarded the Best Poster Presentation.

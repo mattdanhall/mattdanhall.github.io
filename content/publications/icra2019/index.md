@@ -1,11 +1,11 @@
 +++
-title = "IEEE International Conference on Robotics and Automation (ICRA)"
+title = "Spatial Coverage Without Computation."
+pub = "IEEE International Conference on Robotics and Automation (ICRA)"
 date = "2019-01-26"
 paper = "https://eprints.whiterose.ac.uk/143335/1/ICRA2019-Anil-camera-ready.pdf"
 conf = "https://ieeexplore.ieee.org/document/8793731"
 +++
 
-## Spatial Coverage Without Computation.
 <!--more-->
 _A. Özdemir, M. Gauci, A. Kolling, M. D. Hall and R. Groß_.
 

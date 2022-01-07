@@ -1,12 +1,12 @@
 +++
-title = "Robotics: Science and Systems XVI (RSS)"
+title = "Self-Reconfiguration in Two-Dimensions via Active Subtraction with Modular Robots."
+pub = "Robotics: Science and Systems XVI (RSS)"
 date = "2020-07-12"
 paper = "http://www.roboticsproceedings.org/rss16/p014.pdf"
 conf = "http://roboticsproceedings.org/rss16/p014.html"
 youtube = "https://www.youtube.com/embed/RgGi_mc4tOQ?controls=0"
 +++
 
-## Self-Reconfiguration in Two-Dimensions via Active Subtraction with Modular Robots.
 <!--more-->
 _M. D. Hall, A. Özdemir and R. Groß_.
 
