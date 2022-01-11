@@ -21,13 +21,13 @@
     --font-color:#151515;
 }
 
-@media (prefers-color-scheme: dark) {
+/*@media (prefers-color-scheme: dark) {
     :root {
         --background-color:#1e1e1e;
         --global-font-color: #fff;
         --font-color:#fff
     }
-}
+}*/
 
 @media only screen and (max-width: 850px) {
     :root {
@@ -1058,8 +1058,8 @@ figure {
     color: var(--global-text-color);
 }
 
-.dark-mode {
+/*.dark-mode {
     --background-color:#1e1e1e;
     --global-font-color: #fff;
     --font-color:#fff
-}
+}*/
