@@ -803,22 +803,16 @@ figure>figcaption{
 
 .display-pic{
     display:inline-block;
-    text-align:center;
-    text-rendering:optimizeSpeed;
     margin:0;
     padding:0;
     border:0;
-    font-size:4px;
-    font-family:Source Code Pro;
-    background-color:#fff;
-    color:#000;
     line-height:5px;
     overflow:hidden;
     border-radius:0;
-    float:left;
+    float:right;
     margin-right:20px;
     margin-bottom:20px;
-    width:20%;
+    width:30%;
 }
 
 @media only screen and (max-width:650px){
