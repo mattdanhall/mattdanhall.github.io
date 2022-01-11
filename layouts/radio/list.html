@@ -2,14 +2,13 @@
 <h1>{{ .Page.Title }}</h1>
 
 {{ .Content }}
-<br/>
 
 <div class="posts-list">
 {{ range first 1 (sort .Data.Pages "Date" "desc")}}
     <div class="post">
         <p>
             <div class="date">{{ .PublishDate.Format "Jan. 2006" }}</div>
-            <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
+            <h2><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h2>
             <iframe width="60%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&hide_artwork=1&feed=%2Fgagaradio%2Fclear-a-space-with-prof-murray-{{ .Params.show }}%2F" frameborder="0" ></iframe>
             {{ .Content }}
         </p>
@@ -22,7 +21,7 @@
     <div class="post">
         <p>
             <div class="date">{{ .PublishDate.Format "Jan. 2006" }}</div>
-            <h1><a href="{{ .Permalink }}" title="{{ .Title }}">Listen to {{ .Title }} here</a></h1>
+            <h2><a href="{{ .Permalink }}" title="{{ .Title }}">Listen to {{ .Title }} here</a></h2>
             {{ .Content }}
         </p>
     </div>
@@ -30,7 +29,7 @@
 <div class="post">
     <p>
         <div class="date">All time</div>
-        <h1>Or just listen to the <a href=https://open.spotify.com/playlist/6UTOU1UwdxU5KbWPpA8ubX title="playlist">Spotify playlist</a></h1>
+        <h2>Or just listen to the <a href=https://open.spotify.com/playlist/6UTOU1UwdxU5KbWPpA8ubX title="playlist">Spotify playlist</a></h2>
         <iframe src="https://open.spotify.com/embed/playlist/6UTOU1UwdxU5KbWPpA8ubX?utm_source=generator&theme=0" width="60%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
     </p>
 </div>

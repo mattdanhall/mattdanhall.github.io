@@ -1,81 +1,71 @@
 {{ define "main" }}
 
-<!-- <div>
-    <h1 style="font-size: 250%;">MATTHEW D. HALL<h1>
-</div> -->
-
-<h1>ABOUT</h1>
+ <h1>HI! I'M MATT</h1>
 {{ printf `<img src="display_pic.jpg" class="display-pic">` | safeHTML }}
 {{ with .Site.GetPage "/about" }}
     {{ .Content }}
 {{end}}
-<br/>
 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $("#more-info-btn").click(function () {
+            $("#more-info").show();
+            $("#more-info-btn").hide();
+        });
+    });
+</script>
+<h1><a href="#" class="button" id="more-info-btn">MORE STUFF</a></h1>
+
+<div id="more-info" style="display: none">
 <h1>LATEST PUBLICATIONS/PRESENTATIONS</h1>
-
 <div class="posts-list">
 {{ with .Site.GetPage "/publications" }}
     {{ range first 3 (sort .Data.Pages "Date" "desc" (where .Pages ".Params.private" "!=" true)) }}
         <div class="post">
-            <p>
-                <div class="date">{{ .PublishDate.Format "Jan. 2006" }}</div>
-                <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
-                Presented at {{ .Params.pub }}.
-            </p>
+            <div class="date">{{ .PublishDate.Format "Jan. 2006" }}</div>
+            <h2><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h2>
+            <p>Presented at {{ .Params.pub }}.</p>
         </div>    
     {{ end }}
 {{ end }}
 </div>
 
 <h1>LATEST PROJECTS</h1>
-
 <div class="posts-list">
 {{ with .Site.GetPage "/projects" }}
     {{ range first 3 (sort .Data.Pages "Date" "desc" (where .Pages ".Params.private" "!=" true)) }}
         <div class="post">
-            <p>
-                <div class="date">{{ .PublishDate.Format "Jan. 2006" }}</div>
-                <h1><a href="{{ .Params.link }}" title="{{ .Title }}">{{ .Title }}</a></h1>
-                {{ .Summary }}
-            </p>
+            <div class="date">{{ .PublishDate.Format "Jan. 2006" }}</div>
+            <h2><a href="{{ .Params.link }}" title="{{ .Title }}">{{ .Title }}</a></h2>
+            <p>{{ .Summary }}</p>
         </div>    
     {{ end }}
 {{ end }}
 </div>
 
 <h1>LATEST RADIO SHOWS</h1>
-
 <div class="posts-list">
 {{ with .Site.GetPage "/radio" }}
-    <!-- {{ range first 1 (sort .Data.Pages "Date" "desc") }}
-        <div class="post">
-            <p>
-                <div class="date">{{ .PublishDate.Format "Jan. 2006" }}</div>
-                <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
-                <iframe width="60%" height="120" src="{{ .Params.show }}" frameborder="0" ></iframe>
-                {{ .Content }}
-            </p>
-        </div>
-    {{ end }} -->
     {{ range first 2 (sort .Data.Pages "Date" "desc") }}
         <div class="post">
             <p>
                 <div class="date">{{ .PublishDate.Format "Jan. 2006" }}</div>
-                <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
-                {{ .Summary }}
+                <h2><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h2>
+                <p>{{ .Summary }}</p>
             </p>
         </div>
     {{ end }}
         <div class="post">
             <p>
                 <div class="date">2021 - Now</div>
-                <h1><a href="/radio" title="/radio">All episodes</a></h1>
-                Episodes are available to listen to <a href="/radio" title="radio">here</a> or directly on the <a href="https://www.mixcloud.com/gagaradio/" title="mixcloud">gagaradio Mixcloud</a>.
-                Alternatively, you can listen to just the music on the <a href=https://open.spotify.com/playlist/6UTOU1UwdxU5KbWPpA8ubX title="playlist">Spotify playlist</a>.
+                <h2><a href="/radio" title="/radio">All episodes</a></h2>
+                <p>Episodes are available to listen to <a href="/radio" title="radio">here</a> or directly on the <a href="https://www.mixcloud.com/gagaradio/" title="mixcloud">Gaga Radio Mixcloud</a>.
+                Alternatively, you can listen to just the music on the <a href=https://open.spotify.com/playlist/6UTOU1UwdxU5KbWPpA8ubX title="playlist">Spotify playlist</a>.</p>
             </p>
         </div>
 {{ end }}
 </div>
-
+</div>
 
 {{ end }}

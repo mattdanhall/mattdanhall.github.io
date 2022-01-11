@@ -16,10 +16,6 @@ title = "mattdanhall.com"
   url = "CV.pdf"
 
   [[params.navlinks]]
-  name = "gitlab/"
-  url = "https://gitlab.com/mattdanhall"
-
-  [[params.navlinks]]
   name = "publications/"
   url = "publications/"
 

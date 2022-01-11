@@ -4,9 +4,9 @@
     --global-space:10px;
     --mono-font-stack: Source Code Pro, Roboto Mono, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
     --font-stack: Source Code Pro, Roboto Mono, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-    --page-width:70em;
+    --page-width:60em;
     --invert-font-color:#fff;
-    --primary-color: #6aa84f;
+    --primary-color:#6aa84f;
     --secondary-color:#727578;
     --error-color:#d20962;
     --progress-bar-background:#727578;
@@ -18,7 +18,9 @@
     --code-bg-color: #fff;
     --background-color:#fff;
     --global-font-color: #444;
-    --font-color:#151515;
+    --font-color:#666666;
+    --dark-grey:#666666;
+    --darker-grey:#424242;
 }
 
 /*@media (prefers-color-scheme: dark) {
@@ -92,12 +94,14 @@ body{
     margin-bottom: 75px;
 }
 .logo,h1,h2,h3,h4,h5,h6{
-    line-height:var(--global-line-height)
+    line-height:var(--global-line-height);
+    color:var(--darker-grey)
 }
 a{
     cursor:pointer;
     color:var(--primary-color);
-    text-decoration:none
+    text-decoration:none;
+    font-weight: bold
 }
 a:hover{
     background-color:var(--primary-color);
@@ -128,12 +132,12 @@ blockquote,code,em,strong{
     padding:calc(var(--global-space) * 2) 0 calc(var(--global-space) * 2);
     margin:0;
     overflow:hidden;
-    font-weight:600
+    font-weight:600;
 }
 h1::after{
     content:"====================================================================================================";
     position:absolute;
-    bottom:5px;
+    bottom:7px;
     left:0;
     display:var(--display-h1-decoration)
 }
@@ -193,11 +197,11 @@ pre code{
     min-width:100%;
     font-family:var(--mono-font-stack)
 }
-.terminal .logo,.terminal blockquote,.terminal code,.terminal h1,.terminal h2,.terminal h3,.terminal h4,.terminal h5,.terminal h6,.terminal strong{
+.terminal .logo,.terminal blockquote,.terminal code,.terminal h1,.terminal h2,.terminal h3,.terminal h4,.terminal h5,.terminal h6,.terminal{
     font-size:var(--global-font-size);
     font-style:normal;
     font-family:var(--font-stack);
-    color:var(--font-color)
+    color:var(--darker-grey)
 }
 .terminal-prompt{
     position:relative;
@@ -244,7 +248,9 @@ pre code{
 li,li>ul>li{
     position:relative;
     display:block;
-    padding-left:calc(var(--global-space) * 2)
+    padding-left:calc(var(--global-space) * 2);
+    color: var(--dark-grey);
+    margin-bottom: 5px;
 }
 nav>ul>li{
     padding-left:0
@@ -360,7 +366,7 @@ hr{
 }
 p{
     margin:0 0 var(--global-line-height);
-    color:var(--global-font-color)
+    color:var(--dark-grey)
 }
 .container{
     max-width:var(--page-width)
@@ -812,7 +818,7 @@ figure>figcaption{
     float:right;
     margin-left:20px;
     margin-bottom:20px;
-    width:25%;
+    width:30%;
 }
 
 @media only screen and (max-width:650px){
@@ -979,6 +985,14 @@ figure {
     width: 130px;
     z-index: 400;
     padding-top: 0;
+    font-weight: bold;
+    color: var(--dark-grey);
+    text-transform: uppercase;
+}
+
+.date::after{
+    font-weight: normal;
+    content: ':';
 }
 
 @media only screen and (max-width: 850px) {
@@ -1036,6 +1050,8 @@ figure {
         font-weight: bold;
         padding-top: 0;
         display: none;
+        color: var(--dark-grey);
+        text-transform: uppercase;
     }
 
 

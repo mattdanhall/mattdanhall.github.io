@@ -12,17 +12,13 @@ I also host a regular slot on a [radio show](./radio) produced by my friend Prof
 
 Check out my [GitLab](https://gitlab.com/mattdanhall), [LinkedIn](https://www.linkedin.com/in/matthew-d-hall) or [Google Scholar](https://scholar.google.com/citations?user=9OkcSXcAAAAJ). Alternatively, if you want to talk you can reach me via [email](mailto:mattdanhall@duck.com). -->
 
-**Hi! My name is Matt.**
+<!-- **Hi! My name is Matt.** -->
+
+_**I like robots, music, food and the occassional beer or two.**_
 
 A little about me:
 * I am a post-graduate research student in the [Natural Robotics Lab](https://www.sheffield.ac.uk/naturalrobotics) at the University of Sheffield.
 * [My research](./publications) is concerned with methods of self-reconfiguration for modular robotic systems.
+* I have been known to [procrastinate](./projects).
 * You can hear my voice and music taste on a [Gaga Radio](https://www.gagaradio.org) segment called [Wait For The Moment](./radio).
-* Check out my [GitLab](https://gitlab.com/mattdanhall), [LinkedIn](https://www.linkedin.com/in/matthew-d-hall) or [Google Scholar](https://scholar.google.com/citations?user=9OkcSXcAAAAJ).
-* [Email](mailto:mattdanhall@duck.com) me if you want a chat.
-
-<!-- I also have:
-* [GitLab](https://gitlab.com/mattdanhall)
-* [LinkedIn](https://www.linkedin.com/in/matthew-d-hall)
-* [Google Scholar](https://scholar.google.com/citations?user=9OkcSXcAAAAJ)
-* [Email](mailto:mattdanhall@duck.com) -->
+* Reach out on [LinkedIn](https://www.linkedin.com/in/matthew-d-hall) or via [email](mailto:mattdanhall@duck.com) if you want a chat.

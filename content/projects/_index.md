@@ -2,4 +2,4 @@
 title = "PROJECTS"
 +++
 
-Here a few little side projects and tinkerings that I've worked on over the years.
+Here a few little side projects and tinkerings that I've worked on over the years. Also available to view on my [GitLab](https://www.gitlab.com/mattdanhall).
