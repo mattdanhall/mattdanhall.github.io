@@ -810,16 +810,16 @@ figure>figcaption{
     overflow:hidden;
     border-radius:0;
     float:right;
-    margin-right:20px;
+    margin-left:20px;
     margin-bottom:20px;
-    width:30%;
+    width:25%;
 }
 
 @media only screen and (max-width:650px){
     .display-pic{
         font-size:3.2px;
         line-height:4px;
-        margin-right:20px;
+        margin-left:20px;
         margin-bottom:6px;
         width:50%
     }
