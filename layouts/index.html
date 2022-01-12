@@ -8,15 +8,14 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script type="text/javascript">
-    $(document).ready(function () {
-        $("#more-info-btn").click(function () {
-            $("div#more-info").show();
-            $("div#more-info-btn-div").hide();
-        });
-    });
+    function moreinfo() {
+        document.getElementById("more-info").style.display = "block"
+        document.getElementById("more-info-btn-div").style.display = "none"
+    }
 </script>
+
 <div id="more-info-btn-div">
-<h1><a href="#" class="button" id="more-info-btn">MORE STUFF</a></h1>
+    <h1><a href="#" class="button" id="more-info-btn" onclick="moreinfo()">MORE STUFF</a></h1>
 </div>
 
 <div id="more-info" style="display: none">
