@@ -37,7 +37,6 @@
                 {{ range .Site.Params.navlinks }}
                 <li><a href="{{ absURL .url }}" typeof="ListItem">{{ .name }}</a></li>
                 {{ end }}
-<!--                 <li><button id="themetoggle" class="btn" onclick="theme(this.id)">dark/</button></li> -->
             </ul>
           </nav>
         </div>
@@ -48,13 +47,5 @@
         {{ end }}
         {{ partial "footer.html" . }}
     </div>
-<!--     <script>
-      function theme(button_id) {
-        var element = document.body;
-        element.classList.toggle("dark-mode");
-        var text = document.getElementById(button_id).firstChild;
-        text.data = text.data == "dark/" ? "light/" : "dark/";
-      }
-    </script> -->
   </body>
 </html>
