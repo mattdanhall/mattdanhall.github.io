@@ -338,11 +338,11 @@ ol.terminal-toc li a{
     color:var(--secondary-color)
 }
 .terminal-menu li a.active{
-    color:var(--font-color)
+    color:var(--primary-color)
 }
 .terminal-menu li a:hover{
     background:0 0;
-    color:inherit
+    color:var(--primary-color)
 }
 ol.terminal-toc li::before{
     content:counters(item, ".") ". ";
