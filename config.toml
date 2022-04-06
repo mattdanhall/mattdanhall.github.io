@@ -11,9 +11,9 @@ title = "mattdanhall.com"
 
   custom_css = ["css/console.css"]
 
-  [[params.navlinks]]
-  name = "CV/"
-  url = "CV.pdf"
+  #[[params.navlinks]]
+  #name = "CV/"
+  #url = "CV.pdf"
 
   [[params.navlinks]]
   name = "publications/"
