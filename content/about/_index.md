@@ -3,9 +3,10 @@ title = "ABOUT"
 type = "about"
 +++
 
-_**I like code, robots, music, food and the occassional beer or two.**_
+_**I like code, robots, music, food and the occasional beer or two.**_
 
 A little about me:
+* I work as a software engineer.
 * I am a post-graduate research student in the [Natural Robotics Lab](https://www.sheffield.ac.uk/naturalrobotics) at the University of Sheffield.
 * [My research](./publications) is concerned with methods of self-reconfiguration for modular robotic systems.
 * I have been known to [procrastinate](./projects).
