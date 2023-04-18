@@ -1,0 +1,23 @@
+{{ define "main" }}
+<script type="text/javascript">
+    var apiUrl = 'https://api.tfl.gov.uk/StopPoint/{{ .Params.stop }}/arrivals';
+    fetch(apiUrl).then(response => {
+      return response.json();
+    }).then(data => {
+      data.sort(function(a, b) {
+        return a.timeToStation > b.timeToStation;
+      });
+      document.getElementById("firstTrain").innerHTML = data[0].platformName + ', ' + (data[0].timeToStation/60>>0) + 'm' + data[0].timeToStation%60 + 's';
+      document.getElementById("secondTrain").innerHTML = data[1].platformName + ', ' + (data[1].timeToStation/60>>0) + 'm' + data[1].timeToStation%60 + 's';
+      document.getElementById("thirdTrain").innerHTML = data[2].platformName + ', ' + (data[2].timeToStation/60>>0) + 'm' + data[2].timeToStation%60 + 's';
+      console.log(data);
+    }).catch(err => {
+      // Do something for an error here
+    });
+</script>
+
+<h2 id="firstTrain"></h2>
+<h2 id="secondTrain"></h2>
+<h2 id="thirdTrain"></h2>
+
+{{ end }}
