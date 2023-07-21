@@ -1,0 +1,11 @@
++++
+title = "Active Subtraction: A Viable Method of Self-Reconfiguration for Modular Robotic Systems "
+pub = "The University of Sheffield"
+date = "2022-10-05"
+thesis = "https://etheses.whiterose.ac.uk/31496/"
++++
+
+<!--more-->
+_M. D. Hall_.
+
+Modular robotic systems comprise individual robots, termed modules, that physically connect to one another to create a system that is more capable than the sum of the individuals. The way in which the modules connect together alters the attributes of the formed configuration. The ability to change between configurations enables the systems to adapt to match the demands of a task. For example, a system could form a long, narrow shape to navigate a pipe, before being configured to a large, strong shape capable of lifting heavy objects. The problem of autonomously changing between these configurations provides a unique challenge, as modules must coordinate to allow for movement, remain connected, and position themselves correctly. One reliable and robust method of reconfiguration is through subtraction, where modules are removed from an initially connected structure to leave behind the configuration desired. This thesis is concerned with the development and analysis of novel control algorithms to achieve this subtractive reconfiguration without external intervention, instead using modules that are able to remove themselves. The approach is termed active subtraction. To enable deployment on a variety of modular robotic systems, a variety of control strategies are developed, that utilise centralised or distributed control and allow modules to move sequentially or in parallel. It is formally proven that the algorithms enable a system to form arbitrary shapes via active subtraction, and maintain the connectedness of the configuration throughout, preventing collapse. The time-based performance of each algorithm is formally characterised, as well as being validated through the simulation of thousands of randomly generated configurations and configurations specifically designed to compare active subtraction to existing reconfiguration solutions. In addition to these algorithmic contributions, multiple existing modular robotic systems are assessed in detail, identifying their suitability for the use of the proposed active subtraction algorithms as a method of self-reconfiguration.

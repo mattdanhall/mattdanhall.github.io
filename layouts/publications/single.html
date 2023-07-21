@@ -4,6 +4,9 @@
 <b>Presented at {{ .Params.pub }}.</b><br/><br/>
 
 {{ .PublishDate.Format "Jan. 2, 2006" }}
+{{ with .Params.thesis }}
+    // <a href="{{ . }}">View Thesis</a>
+{{ end }}
 {{ with .Params.paper }}
     // <a href="{{ . }}">View Paper</a>
 {{ end }}
