@@ -1,7 +1,7 @@
 {{ define "main" }}
 
  <h1>HI! I'M MATT</h1>
-{{ printf `<img src="display_pic.jpg" class="display-pic">` | safeHTML }}
+{{ printf `<img src="display_pic.png" class="display-pic">` | safeHTML }}
 {{ with .Site.GetPage "/about" }}
     {{ .Content }}
 {{end}}

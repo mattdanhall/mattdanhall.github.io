@@ -2,8 +2,8 @@
     --global-font-size:16px;
     --global-line-height: 1.6em;
     --global-space:10px;
-    --mono-font-stack: Source Code Pro, Roboto Mono, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-    --font-stack: Source Code Pro, Roboto Mono, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    --mono-font-stack: Maple Mono, Maple Mono, Roboto Mono, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    --font-stack: Maple Mono, Maple Mono, Roboto Mono, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
     --page-width:60em;
     --invert-font-color:#fff;
     --primary-color:#6aa84f;
@@ -40,32 +40,32 @@
 }
 
 @font-face {
-    font-family: 'Source Code Pro';
-    src: url('../font/SourceCodePro-Regular.ttf') format('truetype');
+    font-family: 'Maple Mono';
+    src: url('../font/MapleMono-Regular.ttf') format('truetype');
     font-style: normal;
     font-weight: 400;
     text-rendering: optimizeLegibility;
 }
 
 @font-face {
-    font-family: 'Source Code Pro';
-    src: url('../font/SourceCodePro-Italic.ttf') format('truetype');
+    font-family: 'Maple Mono';
+    src: url('../font/MapleMono-Italic.ttf') format('truetype');
     font-style: italic;
     font-weight: 400;
     text-rendering: optimizeLegibility;
 }
 
 @font-face {
-    font-family: 'Source Code Pro';
-    src: url('../font/SourceCodePro-Bold.ttf') format('truetype');
+    font-family: 'Maple Mono';
+    src: url('../font/MapleMono-Bold.ttf') format('truetype');
     font-style: normal;
     font-weight: 700;
     text-rendering: optimizeLegibility;
 }
 
 @font-face {
-    font-family: 'Source Code Pro';
-    src: url('../font/SourceCodePro-BoldItalic.ttf') format('truetype');
+    font-family: 'Maple Mono';
+    src: url('../font/MapleMono-BoldItalic.ttf') format('truetype');
     font-style: italic;
     font-weight: 700;
     text-rendering: optimizeLegibility;
@@ -101,7 +101,7 @@ a{
     cursor:pointer;
     color:var(--primary-color);
     text-decoration:none;
-    font-weight: bold
+    font-style: italic
 }
 a:hover{
     background-color:var(--primary-color);
