@@ -24,9 +24,9 @@ title = "Happy Birthday Goober"
 18. Exploring new parts of the city
 19. Exploring new cities
 20. Playing board games
-21. Work from home days together
+21. Work from home days together with regular cuppas
 22. Hanging up the washing
-23. Having a cuppa
+23. Mad holidays
 24. Watching rugby (when you teach me the rules)
 25. Hanging out with our families
 26. Getting a takeaway
