@@ -1,4 +1,5 @@
 +++
 title = "Happy Birthday Goober"
-link = "https://memberships.picturehouses.com/subscription/member-sign-in"
 +++
+
+[Have a great day](https://memberships.picturehouses.com/subscription/member-sign-in)
