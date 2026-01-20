@@ -1,12 +1,11 @@
 {{ define "main" }}
 
  <h1>HI! I'M MATT</h1>
-{{ printf `<img src="display_pic.png" class="display-pic">` | safeHTML }}
+<img src="display_pic.png" class="display-pic">
 {{ with .Site.GetPage "/about" }}
     {{ .Content }}
 {{end}}
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script type="text/javascript">
     function moreinfo() {
         event.preventDefault()
@@ -23,7 +22,7 @@
 <h1>LATEST PUBLICATIONS/PRESENTATIONS</h1>
 <div class="posts-list">
 {{ with .Site.GetPage "/publications" }}
-    {{ range first 3 (sort .Data.Pages "Date" "desc" (where .Pages ".Params.private" "!=" true)) }}
+    {{ range first 3 (sort .Pages "Date" "desc" (where .Pages ".Params.private" "!=" true)) }}
         <div class="post">
             <div class="date">{{ .PublishDate.Format "Jan. 2006" }}</div>
             <h2><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h2>
@@ -36,7 +35,7 @@
 <h1>LATEST PROJECTS</h1>
 <div class="posts-list">
 {{ with .Site.GetPage "/projects" }}
-    {{ range first 3 (sort .Data.Pages "Date" "desc" (where .Pages ".Params.private" "!=" true)) }}
+    {{ range first 3 (sort .Pages "Date" "desc" (where .Pages ".Params.private" "!=" true)) }}
         <div class="post">
             <div class="date">{{ .PublishDate.Format "Jan. 2006" }}</div>
             <h2><a href="{{ .Params.link }}" title="{{ .Title }}">{{ .Title }}</a></h2>
@@ -49,22 +48,18 @@
 <h1>LATEST RADIO SHOWS</h1>
 <div class="posts-list">
 {{ with .Site.GetPage "/radio" }}
-    {{ range first 2 (sort .Data.Pages "Date" "desc") }}
+    {{ range first 2 (sort .Pages "Date" "desc") }}
         <div class="post">
-            <p>
-                <div class="date">{{ .PublishDate.Format "Jan. 2006" }}</div>
-                <h2><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h2>
-                <p>{{ .Summary }}</p>
-            </p>
+            <div class="date">{{ .PublishDate.Format "Jan. 2006" }}</div>
+            <h2><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h2>
+            <p>{{ .Summary }}</p>
         </div>
     {{ end }}
         <div class="post">
-            <p>
-                <div class="date">2021 - Now</div>
-                <h2><a href="/radio" title="/radio">All episodes</a></h2>
-                <p>Episodes are available to listen to <a href="/radio" title="radio">here</a> or directly on the <a href="https://www.mixcloud.com/gagaradio/" title="mixcloud">Gaga Radio Mixcloud</a>.
-                Alternatively, you can listen to just the music on the <a href=https://open.spotify.com/playlist/6UTOU1UwdxU5KbWPpA8ubX title="playlist">Spotify playlist</a>.</p>
-            </p>
+            <div class="date">2021 - Now</div>
+            <h2><a href="/radio" title="/radio">All episodes</a></h2>
+            <p>Episodes are available to listen to <a href="/radio" title="radio">here</a> or directly on the <a href="https://www.mixcloud.com/gagaradio/" title="mixcloud">Gaga Radio Mixcloud</a>.
+            Alternatively, you can listen to just the music on the <a href=https://open.spotify.com/playlist/6UTOU1UwdxU5KbWPpA8ubX title="playlist">Spotify playlist</a>.</p>
         </div>
 {{ end }}
 </div>

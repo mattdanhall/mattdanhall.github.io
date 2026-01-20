@@ -4,34 +4,28 @@
 {{ .Content }}
 
 <div class="posts-list">
-{{ range first 1 (sort .Data.Pages "Date" "desc")}}
+{{ range first 1 (sort .Pages "Date" "desc")}}
     <div class="post">
-        <p>
-            <div class="date">{{ .PublishDate.Format "Jan. 2006" }}</div>
-            <h2><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h2>
-            <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&hide_artwork=1&feed=%2F{{ .Params.show }}%2F" frameborder="0" ></iframe>
-            {{ .Content }}
-        </p>
+        <div class="date">{{ .PublishDate.Format "Jan. 2006" }}</div>
+        <h2><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h2>
+        <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&hide_artwork=1&feed=%2F{{ .Params.show }}%2F" frameborder="0" ></iframe>
+        {{ .Content }}
     </div>
 {{ end }}
 </div>
 
 <div class="posts-list">
-{{ range after 1 (sort .Data.Pages "Date" "desc")}}
+{{ range after 1 (sort .Pages "Date" "desc")}}
     <div class="post">
-        <p>
-            <div class="date">{{ .PublishDate.Format "Jan. 2006" }}</div>
-            <h2><a href="{{ .Permalink }}" title="{{ .Title }}">Listen to {{ .Title }} here</a></h2>
-            {{ .Content }}
-        </p>
+        <div class="date">{{ .PublishDate.Format "Jan. 2006" }}</div>
+        <h2><a href="{{ .Permalink }}" title="{{ .Title }}">Listen to {{ .Title }} here</a></h2>
+        {{ .Content }}
     </div>
 {{ end }}
 <div class="post">
-    <p>
-        <div class="date">All time</div>
-        <h2>Or just listen to the <a href=https://open.spotify.com/playlist/6UTOU1UwdxU5KbWPpA8ubX title="playlist">Spotify playlist</a></h2>
-        <iframe src="https://open.spotify.com/embed/playlist/6UTOU1UwdxU5KbWPpA8ubX?utm_source=generator&theme=0" width="60%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-    </p>
+    <div class="date">All time</div>
+    <h2>Or just listen to the <a href=https://open.spotify.com/playlist/6UTOU1UwdxU5KbWPpA8ubX title="playlist">Spotify playlist</a></h2>
+    <iframe src="https://open.spotify.com/embed/playlist/6UTOU1UwdxU5KbWPpA8ubX?utm_source=generator&theme=0" width="60%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 </div>
 </div>
 {{ end }}

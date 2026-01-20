@@ -1,8 +1,6 @@
 baseURL = "https://mattdanhall.com/"
-contentdir    = "content"
-layoutdir     = "layouts"
-publishdir    = "public"
 languageCode = "en-gb"
+canonifyURLs = true
 title = "mattdanhall.com"
 
 [params]
